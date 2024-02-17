@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-rand_area = [[-500, -500], [500, 500]]
+rand_area = [[0, 0], [30, 30]]
 
 start = [0, 0] 
 
@@ -176,8 +176,8 @@ def main():
     (70, 50, 10)
     ] # [x, y, radius]
     # Set Initial parameters
-    rrt = RRT(start=[10, 10],
-              goal=[80, 80],
+    rrt = RRT(start=[0, 0],
+              goal=[30, 30],
               rand_area=rand_area,
               obstacle_list=obstacle_list)
     path = rrt.planning()
